@@ -80,7 +80,7 @@
         }
 
         var handleHomeResult = function (response) {
-            // console.log(response.data);
+             console.log(response.data);
             //设置总页数
             $scope.pageCount = response.data.totalPage;
             // $scope.pageCount =6;
