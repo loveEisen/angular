@@ -1,0 +1,11 @@
+{
+	"name":zs,
+	"month":"5月",
+	"salaryCount":300,
+
+	"types":[{
+				"type":dc
+			}],
+
+	"labels":['CT', 'MR', 'DX', 'CR', '推荐大病', '推荐片子'],
+}

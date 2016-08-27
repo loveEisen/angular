@@ -1,0 +1,144 @@
+
+<div class="allContainer">
+    <!--侧边栏-->
+    <div class="aside">
+
+    </div>
+    <!--内容区-->
+    <div class="mainContainier">
+        <nav >
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <div class="row">
+                        <button class=" btn btn-default listBack" ng-click="backOfBill()">&lt;&nbsp;返回</button>
+                        <button class="addBtn addBtn1 " ng-click="addDoctorOfBill()">添加医生</button>
+                    </div>
+
+                </div>
+                <div class="col-md-8 col-lg-8">
+                    <div class="row">
+                        <form action="" class="form-inline ">
+                            <div class="control-group searchInfo">
+
+                                    <div class="begindate input-group date form_date " data-date=""
+                                         data-date-format="dd MM yyyy" data-link-field="dtp_input1"
+                                         data-link-format="yyyy-mm-dd">
+                                        <label for="dtp_input1" class="control-label " >开始月份</label>
+                                        <input class="form-control " type="text" ng-model="startime" ng-change="getStartime()" value="" readonly
+                                               placeholder="点击选择">
+                                        <!--<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>-->
+                                        <span class="input-group-addon "><span
+                                                class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                    <input type="hidden" id="dtp_input1" value=""/><br/>
+
+
+                            </div>
+
+                            <div class="control-group searchInfo">
+                                <div class="enddate input-group date form_date " data-date=""
+                                     data-date-format="dd MM yyyy"
+                                     data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                    <label for="dtp_input2" class="control-label ">截止月份</label>
+                                    <input class="form-control " type="text" ng-model="endtime" ng-change="getEndtime()" value="" readonly
+                                           placeholder="点击选择">
+                                    <!--<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>-->
+                                    <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-calendar"></span></span>
+                                </div>
+                                <input type="hidden" id="dtp_input2" value=""/><br/>
+                            </div>
+
+                            <div class=" searchInfo">
+                                <button  ng-click="search()" class="btn btn-default querryBtn">查询</button>
+                            </div>
+                            <div class=" searchInfo">
+
+                                <!--<select name="" >-->
+                                    <!--<option value="1"  >医生列表</option>-->
+                                    <!--<option value="2" selected>账单列表</option>-->
+                                <!--</select>-->
+                                <select name="" ng-model="selectBillList" ng-change = "getBillList()">
+                                    <option value="1" ng-selected="true">账单列表</option>
+                                    <option value="0">医生列表</option>
+                                </select>
+
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </nav>
+        <div class="tableContext">
+            <table>
+                <thead>
+                <tr>
+                    <th>医生姓名</th>
+                    <th>登录名</th>
+                    <th>手机号</th>
+                    <th>本月（CT/MR/DX/CR）</th>
+                    <th>推荐大病（本月）</th>
+                    <th>推荐片子（本月）</th>
+                    <th>本月合计收入（元）</th>
+                    <th>账单详情</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="item in billLists track by $index">
+                    <td>{{item.name}}</td>
+                    <td>{{item.loginName}}</td>
+                    <td>{{item.telphone}}</td>
+                    <td>{{item.perTotal}}</td>
+                    <td>{{item.illness}}</td>
+                    <td>{{item.pz}}</td>
+                    <td >{{item.salary}}</td>
+                    <td ><a class="edit" href="javascript:void(0);" ng-click="details(item.id)">{{item.bill}}</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="pagination" ng-controller="paginationBillListCtrl">
+            <p class="itemCount">每页显示
+                <select  ng-model="selectValue"
+                         ng-options="item.pagesize   for item in billLists track by item.id"  value="{{item.id}}" ng-change="getPagesize()" >
+                </select>
+                条，共 <span>{{total}}</span> 条记录
+            </p>
+
+            <div  class="changePage">
+                <div class="pager">
+                    <pager page-count="pageCount" current-page="currentPage" on-page-change="onPageChange()" first-text="首页" next-text="下一页" prev-text="上一页" last-text="尾页" show-goto="true" goto-text="跳转到"></pager>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!--<script src="../vender/jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>-->
+<!--<script src="../vender/bootstrap/js/bootstrap.min.js"></script>-->
+<!--<script src="../js/bootstrap-datetimepicker.js" charset="UTF-8"></script>-->
+<!--<script src="../js/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>-->
+<script>
+
+    $(function () {
+        $('.form_date').datetimepicker({
+            language: 'zh-CN',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 1,
+            pickerPosition: "bottom-right",
+            format: 'yyyy-mm-dd',
+        });
+    });
+</script>
