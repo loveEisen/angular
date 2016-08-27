@@ -21,11 +21,11 @@ app.controller('editBDCtrl',['MyService','$scope','$location','$http',function (
             // 让该表单默认上返回来的数据
             $scope.user.name = response.data.name;
 
-
         };
 
     if($scope.urlParams!=undefined){
             MyService.geteditBDData($scope.urlParams,handleEditDataResult);
+
         }
 
     $scope.backDoctorBD = function () {
@@ -38,28 +38,55 @@ app.controller('editBDCtrl',['MyService','$scope','$location','$http',function (
         {id:3,BD:"30"}
         ];
     $scope.selectLeaderBD =  $scope.leaderBDs[0];
-    $scope.getLeaderBD = function () {
-        // $scope.value =  $scope.selectLeaderBD.BD
-        console.log($scope.selectLeaderBD.BD);
-    }
+
     // $scope.user = {};
     $scope.getName  = function(){
         console.log($scope.user.name)
+        if($scope.user.name.length > 0){
+            return true;
+        }else {
+            return false;
+        }
     }
     $scope.getTelphone  = function(){
         console.log($scope.user.telphone)
+
+        if($scope.user.telphone.length > 0){
+//            $scope.telephoneStatus = false;
+            return true;
+        }else {
+//            $scope.telephoneStatus = true;
+            return false;
+        }
     }
     $scope.getLoginName  = function(){
         console.log($scope.user.loginName)
+        if($scope.user.loginName.length > 0){
+            return true;
+        }else {
+            return false;
+        }
     }
     $scope.getLoginPwd  = function(){
         console.log($scope.user.password)
+        if($scope.user.password != undefined){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    $scope.getLeaderBD = function () {
+        console.log($scope.selectLeaderBD.BD);
     }
 
     $scope.submitEditBDData  = function(){
-        if( $scope.user.name.length<2 || $scope.user.name.length >17 ){
-                alert("dsfjkl");
-                return;
+        var islegal = $scope.getName() && $scope.getTelphone() && $scope.getLoginName() &&$scope.getLoginPwd();
+        console.log( islegal);
+        if(!islegal){
+
+            alert("输入不合法");
+            return;
         }
 
         //需要验证输入是否合法,不合法，返回相应位置，提示信息

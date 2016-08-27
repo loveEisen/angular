@@ -60,7 +60,7 @@
         this.getParams = function (address) {
             var startIndex =address.indexOf("?");
             if(startIndex===-1){
-                return {};
+                return ;
             }
             var paramsStr =address.slice(startIndex+1);
             var paramsArr = paramsStr.split("&");
