@@ -1,0 +1,344 @@
+{
+  "totalPage":"8",
+  "total":"20",
+  "totalList":"100",
+  "totalBill":"200",
+  "records":[
+    {
+      "id":"001",
+      "username": "张三",
+      "loginName":"zs",
+      "kzTotal": 29,
+      "jjTotal": 29,
+      "kzTotal": 29,
+      "mangerTotal": 29,
+      "leader": "老王"
+    },
+    {
+      "id":"002",
+      "username": "张三",
+      "loginName":"zs",
+      "kzTotal": 29,
+      "jjTotal": 29,
+      "kzTotal": 29,
+      "mangerTotal": 29,
+      "leader": "老王"
+    },
+    {
+      "id":"003",
+      "username": "张三",
+      "loginName":"zs",
+      "kzTotal": 29,
+      "jjTotal": 29,
+      "kzTotal": 29,
+      "mangerTotal": 29,
+      "leader": "老王"
+    },
+    {
+      "id":"004",
+      "username": "张三",
+      "loginName":"zs",
+      "kzTotal": 29,
+      "jjTotal": 29,
+      "kzTotal": 29,
+      "mangerTotal": 29,
+      "leader": "老王"
+    },
+    {
+      "id":"005",
+      "username": "张三",
+      "loginName":"zs",
+      "kzTotal": 29,
+      "jjTotal": 29,
+      "kzTotal": 29,
+      "mangerTotal": 29,
+      "leader": "老王"
+    },
+    {
+      "id":"001",
+      "username": "张三",
+      "loginName":"zs",
+      "kzTotal": 29,
+      "jjTotal": 29,
+      "kzTotal": 29,
+      "mangerTotal": 29,
+      "leader": "老王"
+    },
+    {
+      "id":"001",
+      "username": "张三",
+      "loginName":"zs",
+      "kzTotal": 29,
+      "jjTotal": 29,
+      "kzTotal": 29,
+      "mangerTotal": 29,
+      "leader": "老王"
+    },
+    {
+      "id":"001",
+      "username": "张三",
+      "loginName":"zs",
+      "kzTotal": 29,
+      "jjTotal": 29,
+      "kzTotal": 29,
+      "mangerTotal": 29,
+      "leader": "老王"
+    },
+    {
+      "id":"001",
+      "username": "张三",
+      "loginName":"zs",
+      "kzTotal": 29,
+      "jjTotal": 29,
+      "kzTotal": 29,
+      "mangerTotal": 29,
+      "leader": "老王"
+    },
+    {
+      "id":"001",
+      "username": "张三",
+      "loginName":"zs",
+      "kzTotal": 29,
+      "jjTotal": 29,
+      "kzTotal": 29,
+      "mangerTotal": 29,
+      "leader": "老王"
+    }
+
+  ],
+  "doctorList":[
+    {
+      "id":"001",
+      "name":"张三",
+      "loginName":"zhangsan",
+      "telphone":"13450096824",
+      "total":"50 / 25 / 30 / 18",
+      "perTotal":"12 / 8 / 10 / 7",
+      "illness":"100 / 20",
+      "pz":"100 / 20",
+      "bill":"查看",
+      "edit":"操作"
+    }, {
+      "id":"002",
+      "name":"张三",
+      "loginName":"zhangsan",
+      "telphone":"13450096824",
+      "total":"50 / 25 / 30 / 18",
+      "perTotal":"12 / 8 / 10 / 7",
+      "illness":"100 / 20",
+      "pz":"100 / 20",
+      "bill":"查看",
+      "edit":"操作"
+    }, {
+      "id":"003",
+      "name":"张三",
+      "loginName":"zhangsan",
+      "telphone":"13450096824",
+      "total":"50 / 25 / 30 / 18",
+      "perTotal":"12 / 8 / 10 / 7",
+      "illness":"100 / 20",
+      "pz":"100 / 20",
+      "bill":"查看",
+      "edit":"操作"
+    }, {
+      "id":"004",
+      "name":"张三",
+      "loginName":"zhangsan",
+      "telphone":"13450096824",
+      "total":"50 / 25 / 30 / 18",
+      "perTotal":"12 / 8 / 10 / 7",
+      "illness":"100 / 20",
+      "pz":"100 / 20",
+      "bill":"查看",
+      "edit":"操作"
+    }, {
+      "id":"005",
+      "name":"张三",
+      "loginName":"zhangsan",
+      "telphone":"13450096824",
+      "total":"50 / 25 / 30 / 18",
+      "perTotal":"12 / 8 / 10 / 7",
+      "illness":"100 / 20",
+      "pz":"100 / 20",
+      "bill":"查看",
+      "edit":"操作"
+    }, {
+      "id":"006",
+      "name":"张三",
+      "loginName":"zhangsan",
+      "telphone":"13450096824",
+      "total":"50 / 25 / 30 / 18",
+      "perTotal":"12 / 8 / 10 / 7",
+      "illness":"100 / 20",
+      "pz":"100 / 20",
+      "bill":"查看",
+      "edit":"操作"
+    }, {
+      "id":"007",
+      "name":"张三",
+      "loginName":"zhangsan",
+      "telphone":"13450096824",
+      "total":"50 / 25 / 30 / 18",
+      "perTotal":"12 / 8 / 10 / 7",
+      "illness":"100 / 20",
+      "pz":"100 / 20",
+      "bill":"查看",
+      "edit":"操作"
+    },
+    {
+      "id":"008",
+      "name":"张三",
+      "loginName":"zhangsan",
+      "telphone":"13450096824",
+      "total":"50 / 25 / 30 / 18",
+      "perTotal":"12 / 8 / 10 / 7",
+      "illness":"100 / 20",
+      "pz":"100 / 20",
+      "bill":"查看",
+      "edit":"操作"
+    },
+    {
+      "id":"009",
+      "name":"张三",
+      "loginName":"zhangsan",
+      "telphone":"13450096824",
+      "total":"50 / 25 / 30 / 18",
+      "perTotal":"12 / 8 / 10 / 7",
+      "illness":"100 / 20",
+      "pz":"100 / 20",
+      "bill":"查看",
+      "edit":"操作"
+    },
+    {
+      "id":"010",
+      "name":"张三",
+      "loginName":"zhangsan",
+      "telphone":"13450096824",
+      "total":"50 / 25 / 30 / 18",
+      "perTotal":"12 / 8 / 10 / 7",
+      "illness":"100 / 20",
+      "pz":"100 / 20",
+      "bill":"查看",
+      "edit":"操作"
+    }, {
+      "id":"011",
+      "name":"张三",
+      "loginName":"zhangsan",
+      "telphone":"13450096824",
+      "total":"50 / 25 / 30 / 18",
+      "perTotal":"12 / 8 / 10 / 7",
+      "illness":"100 / 20",
+      "pz":"100 / 20",
+      "bill":"查看",
+      "edit":"操作"
+    }
+
+
+  ],
+  "billList":[
+    {
+      "id":"001",
+      "name":"张三",
+      "loginName":"zhangsan",
+      "telphone":"13450096824",
+      "perTotal":"12 / 8 / 10 / 7",
+      "illness":"100",
+      "pz":"100 ",
+      "salary":"100",
+      "bill":"查看",
+      "doctorBill":{
+        "name":"张三",
+        "month":"2016/03 ",
+        "salaryCount":"14000元"
+      }
+    },
+    {
+      "id":"002",
+      "name":"张三2",
+      "loginName":"zhangsan",
+      "telphone":"13450096824",
+      "perTotal":"12 / 8 / 10 / 7",
+      "illness":"100",
+      "pz":"100 ",
+      "salary":"100",
+      "bill":"查看",
+      "doctorBill":{
+        "name":"张三2",
+        "month":"2016/03 ",
+        "salaryCount":"15000元"
+      }
+    },
+    {
+      "id":"003",
+      "name":"张三3",
+      "loginName":"zhangsan",
+      "telphone":"13450096824",
+      "perTotal":"12 / 8 / 10 / 7",
+      "illness":"100",
+      "pz":"100 ",
+      "salary":"100",
+      "bill":"查看",
+      "doctorBill":{
+      "name":"张三3",
+      "month":"2016/03 ",
+      "salaryCount":"18000元"
+    }
+    },
+    { "id":"004",
+      "name":"张三3",
+      "loginName":"zhangsan",
+      "telphone":"13450096824",
+      "perTotal":"12 / 8 / 10 / 7",
+      "illness":"100",
+      "pz":"100 ",
+      "salary":"100",
+      "bill":"查看",
+      "doctorBill":{
+        "name":"张三3",
+        "month":"2016/03 ",
+        "salaryCount":"18000元"
+      }
+    },
+    {
+      "id":"005",
+      "name":"张三",
+      "loginName":"zhangsan",
+      "telphone":"13450096824",
+      "perTotal":"12 / 8 / 10 / 7",
+      "illness":"100",
+      "pz":"100 ",
+      "salary":"100",
+      "bill":"查看",
+      "doctorBill":{
+        "name":"张三3",
+        "month":"2016/03 ",
+        "salaryCount":"18000元"
+      }
+    },
+    {
+      "id":"006",
+      "name":"张三",
+      "loginName":"zhangsan",
+      "telphone":"13450096824",
+      "perTotal":"12 / 8 / 10 / 7",
+      "illness":"100",
+      "pz":"100 ",
+      "salary":"100",
+      "bill":"查看",
+      "doctorBill":{
+        "name":"张三3",
+        "month":"2016/03 ",
+        "salaryCount":"18000元"
+      }
+    }
+  ],
+  "sort":[
+    {"type":"CT","num":"120","salary":"17500"},
+    {"type":"MR","num":"100","salary":"2750"},
+    {"type":"DX","num":"120","salary":"2750"},
+    {"type":"CR","num":"120","salary":"2750"},
+    {"type":"推荐大病","num":"80","salary":"100"},
+    {"type":"推荐片子","num":"120","salary":"2750"}
+
+  ]
+}
